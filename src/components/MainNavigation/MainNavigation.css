@@ -1,0 +1,15 @@
+.header-text {
+  color: darkslategray;
+  font-family: 'Avenir-medium';
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header-text:hover {
+  color: lightskyblue;
+}
+
+.nav {
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+}

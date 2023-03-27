@@ -1,0 +1,42 @@
+.modal-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 44px;
+  margin-top: 20px;
+}
+
+.modal-body .col {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.modal-id {
+  display: flex;
+}
+
+.modal-id p {
+  margin-bottom: 0;
+}
+
+.modal-image img {
+  width: 52%;
+}
+
+.modal-text {
+  font-family: 'Avenir-Medium';
+}
+
+.modalbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 96%;
+}
+
+.lightgrayText {
+  color: #808080;
+  margin-left: 10px;
+  font-family: 'Avenir-Light';
+}

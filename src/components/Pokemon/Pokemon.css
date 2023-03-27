@@ -1,0 +1,50 @@
+.poke-box {
+  background-color: ghostwhite;
+  box-shadow: 5px 6px #88888887;
+  border-radius: 17px;
+  height: 220px;
+  margin-bottom: 28px;
+  width: 200px;
+}
+
+.poke-box h4 {
+  font-family: 'Avenir-Light';
+  font-weight: 200;
+}
+
+.poke-box .row {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-image {
+  width: 56% !important;
+}
+
+.pokemon-type, .pokemon-weight {
+  font-size: 11px;
+  color: gray;
+  margin-bottom: 0.5rem;
+  margin-left: 5px;
+  font-family: 'Avenir-Medium';
+}
+
+.type-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.type-box p {
+  font-size: 11px;
+}
+
+.weight-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.weight-box p {
+  font-size: 11px;
+}

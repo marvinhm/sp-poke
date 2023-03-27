@@ -1,0 +1,40 @@
+.page-main-title {
+  color: #000000;
+  cursor: default;
+  font-size: 187.5%;
+  line-height: 125%;
+  font-weight: 200;
+  font-family: 'Avenir-Light';
+  text-transform: none;
+  margin-bottom: 33px;
+  margin-top: 30px;
+}
+
+.page-main-desc {
+  color: #808080;
+  cursor: default;
+  font-size: 100.5%;
+  line-height: 125%;
+  font-weight: 200;
+  font-family: 'Avenir-Medium';
+}
+
+.listOfPokemon {
+  border-radius: 9px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 36px !important;
+  padding-left: 35px !important;
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+  .listOfPokemon {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
