@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: aliceblue;
 }
 
 .App-logo {
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-item a {
+  color: #000000;
+  cursor: default;
+  opacity: 0.8;
+  line-height: 125%;
+  text-transform: none;
+  text-decoration: none;
+  font-family: "Flexo-Regular",arial,sans-serif;
 }
