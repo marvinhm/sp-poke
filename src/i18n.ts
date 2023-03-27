@@ -21,7 +21,7 @@ i18n
         translation: {
           // here we will place our translations...
           homepage: {
-            title: "Pokemon 1st Generation Encyclopideia",
+            title: "Pokemon 1st Generation Encyclopedia",
             subtitle: "Discover 151 of the Pokemon that statred it all.",
             button: "Enter Here"
           },
