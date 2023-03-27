@@ -22,7 +22,7 @@ i18n
           // here we will place our translations...
           homepage: {
             title: "Pokemon 1st Generation Encyclopedia",
-            subtitle: "Discover 151 of the Pokemon that statred it all.",
+            subtitle: "Discover 151 of the Pokemon that started it all.",
             button: "Enter Here"
           },
           navigation: {
