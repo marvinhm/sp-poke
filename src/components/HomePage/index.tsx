@@ -18,9 +18,12 @@ function HomePage() {
           <h1 className="display-4 homepage-title">{t('homepage.title')}</h1>
           <hr/>
             <p className='page-text'>{t('homepage.subtitle')}</p>
-            <Link to="/list">
-              <Button variant="outline-secondary">{t('homepage.button')}</Button>
-          </Link>
+            <div className='homepage-button'>
+              <Link to="/list">
+                <Button variant="outline-secondary">{t('homepage.button')}</Button>
+              </Link>
+            </div>
+            
         </div>
       </div>
     </div>

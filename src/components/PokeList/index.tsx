@@ -41,15 +41,19 @@ function PokeList() {
     i18n.changeLanguage(lng);
 
     const fetchAllPokemon = async () => {
-      const response = await fetch(
-        "https://pokeapi.co/api/v2/pokemon?limit=151"
-      );
-      const data = await response.json();
-      const results = data.results
-        .slice(0, data.results.length)
-        .map((newArray: Object) => newArray);
+      try {
+        const response = await fetch(
+          "https://pokeapi.co/api/v2/pokemon?limit=151"
+        );
+        const data = await response.json();
+        const results = data.results
+          .slice(0, data.results.length)
+          .map((newArray: Object) => newArray);
 
-      setPokemonList(results);
+        setPokemonList(results);
+      } catch (e) {
+        console.log("Error message: ", e)
+      }
     };
 
     fetchAllPokemon();

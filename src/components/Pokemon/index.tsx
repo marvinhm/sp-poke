@@ -27,15 +27,18 @@ function Pokemon({ pokeId, selectedPokemon }: PokemonProps) {
   React.useEffect(() => {
     const lng = navigator.language;
     i18n.changeLanguage(lng);
+    try {
+      const fetchPokemon = async () => {
+        const response = await fetch(selectedPokemon.url as string);
+        const data = await response.json();
 
-    const fetchPokemon = async () => {
-      const response = await fetch(selectedPokemon.url as string);
-      const data = await response.json();
+        setCurrentPokemon(data);
+      };
 
-      setCurrentPokemon(data);
-    };
-
-    fetchPokemon();
+      fetchPokemon();
+    } catch (e) {
+      console.log("Error message: ", e)
+    }
   }, []);
 
   return (

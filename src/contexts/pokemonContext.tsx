@@ -24,10 +24,14 @@ class PokemonProvider extends React.Component<any, any>{
   }
 
   selectPokemon = async(poke: poke) => {
-    const pokeResponse = await fetch(poke.url);
-    const data = await pokeResponse.json();
-    
-    this.setState({ selectedPokemon: data })
+    try {
+      const pokeResponse = await fetch(poke.url);
+      const data = await pokeResponse.json();
+      
+      this.setState({ selectedPokemon: data })
+    } catch (e) {
+      console.log("Error message: ", e)
+    }
   }
 
   getPokemonWeightKg = (weight: number) => {
@@ -39,9 +43,13 @@ class PokemonProvider extends React.Component<any, any>{
   }
 
   getSpeciesData = async (pokeId: number) => {
-    const getResponse = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeId}/`);
-    const data = await getResponse.json();
-    this.setState({ species: data })
+    try {
+      const getResponse = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokeId}/`);
+      const data = await getResponse.json();
+      this.setState({ species: data })
+    } catch (e) {
+      console.log("Error message: ", e)
+    }
   }
   
   getPokemonTypes = (pokeTypes: Array<any>) => {
